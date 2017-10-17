@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Linear Music Player with Playlist & Waveform</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link href="css/style.css" rel="stylesheet">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/jquery.jplayer.min.js"></script>
+	<script src="js/jplayer.playlist.min.js"></script>
+	<script src="js/id3.min.js"></script>
+	<script src="js/iscroll.min.js"></script>
+	
+	<script src="js/jquery.linerPlayer.js"></script>			
+	
+	<link href="HERE/here.css" rel="stylesheet">
+	<script src="HERE/here.js"></script>	
+
+</head>
+<body style="margin:0; padding:0;">
+
+	<div class="now">
+		<div class="blocks">
+			<div class="block">
+				<h1>Linear Music Player with Playlist & Waveform <i class="icon-volume" style="display:none; font-size: 50%;"></i></h1>
+			</div>
+			<div style="width:80%;max-width:1000px; margin:0 auto;">
+				<div class="block" style="padding:15px;line-height: 150%;">
+					Linear Music Player it's a<strong> beautiful simple tiny player</strong> for bottom or top of your site.
+					Find the best sizes and colors for yourself and embed it on the page right now. 
+					It works on tablets and personal computers, you can even embed it to my mobile html5 app. <br/>
+					We have made it easy to use and install for anyone.
+					Add only one line and it will work. <strong>No complicated configurations and script</strong>, no torment with css and writing a lot of HTML code. 
+					<strong>Just copy/paste</strong> in any place on your website and you will have an amazing html5 music player for and for your listeners.
+				</div>
+				
+				<div class="block" style="float:left; max-width:400px; min-width:45%;text-align: justify;">
+					<ul>
+						<li><span class="green">✓</span> Many colors (use the color picker)</li>
+						<li><span class="green">✓</span> <strong>Two dimensional types</strong>: thick and thin (use the settings on the left)</li>
+						<li><span class="green">✓</span> Do not closes the lower part of the page content</li>
+						<li><span class="green">✓</span> You can set absolutely any color suitable to your design</li>
+						<li><span class="green">✓</span> Can <strong>shows Nowplaying info in title</strong> of the page (<strong>optional</strong>)</li>
+						<li><span class="green">✓</span> Beautiful rotation track title and album (<strong>optional</strong>)</li>
+						<li><span class="green">✓</span> Unique <strong>waveform</strong> for positive user experience</li>
+						<li><span class="green">✓</span> <strong>Multiple colors</strong> for your site design</li>
+						<li><span class="green">✓</span> Has playlist</li>
+						<li><span class="green">✓</span> Only mp3 file required</li>						
+					</ul>
+				</div>
+				<div class="block" style="float:right; max-width:400px; min-width:45%;text-align: justify;">
+					<ul>
+						<li><span class="green">✓</span> <strong>VERY</strong> Easy to Install</li>
+						<li><span class="green">✓</span> <strong>Only 1 one line of code</strong> and if you need I will do it for you by myself</li>
+						<li><span class="green">✓</span> Detailed documentation and sample files</li>
+						<li><span class="green">✓</span> Even old browsers - FLASH fallback included for older browsers that don’t support HTML5 audio</li>
+						<li><span class="green">✓</span> Hiding playlist does <strong>not cover the content</strong></li>
+						<li><span class="green">✓</span> Playlist opener button for mobile devices</li>
+						<li><span class="green">✓</span> Responsive, Mobile ready, Tested on Smartphones, Tablets, Touch Screens Win8, etc</li>
+						<li><span class="green">✓</span> Shuffle mode and button (<strong>optional</strong>)</li>
+						<li><span class="green">✓</span> Loop mode and button (<strong>optional</strong>)</li>
+					</ul>
+				</div>
+				<div style="clear:both;"></div>
+			</div>
+			
+			<div class="block" style="margin-bottom:95px;">
+				<h3>Do you still have questions? Send me an email: <a href="mailto:stormybyte@hotmail.com">stormybyte@hotmail.com</a></h3>
+				<h3 style="text-align:center;display:none;"><a href="#" style="text-transform: uppercase;">Or buy it now and ENJOY1</a></h3>
+			</div>
+		</div>
+	
+	
+		<div class="colours">
+			<div class="make colors" style="color:#fff;box-shadow:none;transform:none;left:5px;bottom:15px;"><i class="icon-wrench"></i></div>
+			<div class="make colors" style="background-color:#008dde" data-colour="blu" data-rgb="#008dde"></div>
+			<div class="make colors" style="background-color:#cc181e" data-colour="red" data-rgb="#cc181e"></div>
+			<div class="make colors" style="background-color:#ffdb4c" data-colour="yellow" data-rgb="#ffdb4c"></div>
+			<div class="make colors" style="background-color:#008a00" data-colour="green" data-rgb="#45E427"></div>			
+			<div class="make colors" style="background-color:#ff6600" data-colour="orange" data-rgb="#ff6600"></div>
+			<div class="make colors" style="background-color:#fff" data-colour="white" data-rgb="#fff"></div>
+			<div class="make large" style="color:#fff;text-shadow:1px 1px 1px #555;text-align:right;box-shadow:none;"><span style="color:#fff;text-decoration:none;font-size:80%;cursor:pointer;">make&nbsp;thick</span></div>
+			<div class="make thin" style="color:#fff;text-shadow:1px 1px 1px #555;text-align:right;box-shadow:none;"><span style="color:#fff;text-decoration:none;font-size:80%;cursor:pointer;">make&nbsp;thin</span></div>
+		</div>
+	</div>
+
+
+	<script>
+		jQuery(function($) {
+			$('body').linerPlayer({
+				firstPlaying: 0,
+				autoplay: true,
+				shuffle: false,
+				//veryThin: true,
+				slideAlbumsName: true,
+				nowplaying2title: true,
+				roundedCorners: true,
+				//accentColor:"#cc181e",	//008DDE			
+				pluginPath: "/canyon/liner/", // <<< IMPORTANT! - Change this to your path to the plugin folder
+				playlist: [ //♩ ♪ ☊ ♫ ♬ //
+					{mp3:"muz/The Pretenders - Break up the concrete.mp3", title:"Break up the concrete", artist:"The Pretenders", album:"Single", cover:"muz/pretend.jpg"},
+					{mp3:"muz/intro.mp3", title:"Intro", artist:"Futurama Team", album:"Comedy Central", cover:"muz/fut.png"},
+					{mp3:"muz/ShakeItOffTaylorSwift.mp3", title:"Shake It Off", artist:"Taylor Swift", album:"Single", cover:"muz/tay.jpg"},
+					{mp3:"muz/DeepVally.mp3", title:"Deep Vally", artist:"Hobo Playa", album:"Single", cover:"muz/deep.png"},
+					{mp3:"muz/liquiidcinema.mp3", title:"Liquiid cinema", artist:"Unknown", album:"Soundtrack", cover:"muz/requiem.jpg"},
+					{mp3:"muz/meredith_brooks_-_bitch.mp3", title:"Bitch", artist:"Meredith Brooks", album:"Single", cover:"muz/bithch.jpg"},
+					{mp3:"muz/true_bloood_instrumental.mp3", title:"True Blood", artist:"Instrumental", album:"Soundtrack", cover:"muz/tru.jpg"}
+				]
+			});
+			
+		});
+	</script>
+	
+</body>
+</html>
