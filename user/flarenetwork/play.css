@@ -9,10 +9,11 @@
 #player #play,#player #pause{ left:26px; }
 #player #previous{ left:0px; }
 #player #next{ left:52px; }
-#player #title{ visibility: hidden; display: none;  }
+#player #title{ left:90px;  }
 #player #tooltip{ right:196px; }
 #player #timer{ right:120px;  }
 #player #list{ right:0px; }
+#player #text{ visibility: hidden; display: none; }
 
 #player #seeker{ right:320px; }
 #player #seekerBase{ border-color:#000;  }
